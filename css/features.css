@@ -1,0 +1,42 @@
+.features > .container > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.features > .container > ul > li {
+  width: 264px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.features-title {
+  color: var(--navy-blue-modal);
+}
+
+.features .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 1158px;
+  padding: 0 15px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  height: 112px;
+  width: 100%;
+  background-color: var(--cloud);
+}
