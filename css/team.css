@@ -82,3 +82,12 @@
 .team-item__social-link .social-icon {
   fill: var(--cloud);
 }
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1158px) {
+}

@@ -42,3 +42,15 @@
 .hero__title {
   max-width: 496px;
 }
+
+@media (min-width: 320px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1158px) {
+  
+}

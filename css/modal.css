@@ -276,3 +276,12 @@
 .order-modal__submit-button:focus {
   background: var(--ocean);
 }
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1158px) {
+}
