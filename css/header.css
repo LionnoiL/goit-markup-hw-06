@@ -6,6 +6,7 @@
   flex-direction: row;
   gap: 76px;
   padding: 16px;
+  justify-content: space-between;
 }
 
 .header .logo {
@@ -95,6 +96,7 @@
 @media (min-width: 768px) {
   .header .container {
     padding: 0 16px;
+    justify-content: flex-start;
   }
 
   .header__navigation {
@@ -109,6 +111,10 @@
   .header__contacts-list {
     flex-direction: column;
     row-gap: 12px;
+  }
+
+  .header__mobile-menu-button {
+    display: none;
   }
 }
 
