@@ -56,7 +56,12 @@
           </ul>
         </address>
 
-        <svg class="header__mobile-menu-button" width="16.8" height="14.4">
+        <svg
+          class="header__mobile-menu-button"
+          width="16.8"
+          height="14.4"
+          id="burger-menu-button"
+        >
           <use href="./images/icons.svg#icon-burger-menu"></use>
         </svg>
       </div>
@@ -652,7 +657,7 @@
 
     <div id="modal" class="order-modal__overlay">
       <div class="order-modal__content">
-        <button class="order-modal__close-button" type="button">
+        <button class="close-button" type="button" id="close-modal-button">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -761,7 +766,7 @@
     <script>
       const orderButton = document.querySelector('.hero__order-button');
       const modalOverlay = document.querySelector('#modal');
-      const closeButton = document.querySelector('.order-modal__close-button');
+      const closeButton = document.querySelector('#close-modal-button');
 
       orderButton.addEventListener('click', () => {
         modalOverlay.classList.add('is-open');
@@ -774,7 +779,116 @@
     <!-- #endregion Modal -->
 
     <!-- #region MobileMenu -->
-    <div class="mobile-menu"></div>
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="close-button" type="button" id="close-mobile-menu-button">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-menu__navigation">
+        <ul class="mobile-menu__navigation-list">
+          <li class="mobile-menu__navigation-item">
+            <a class="mobile-menu-item__link active" href="#features"
+              >Features</a
+            >
+          </li>
+          <li class="mobile-menu__navigation-item">
+            <a class="mobile-menu-item__link" href="#team">Team</a>
+          </li>
+          <li class="mobile-menu__navigation-item">
+            <a class="mobile-menu-item__link" href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="bottom-block">
+        <address class="mobile-menu__contacts-list">
+          <ul class="mobile-menu__contacts-list">
+            <li class="mobile-menu__contacts-item">
+              <a
+                class="mobile-menu__contact-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a class="mobile-menu__contact-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-menu__social-list">
+          <li class="mobile-menu__social-item">
+            <a
+              class="mobile-menu__social-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              class="mobile-menu__social-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              class="mobile-menu__social-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              class="mobile-menu__social-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const burgerMenuButtom = document.querySelector('#burger-menu-button');
+      const modalMenu = document.querySelector('#mobile-menu');
+      const closeMobileMenuButton = document.querySelector(
+        '#close-mobile-menu-button'
+      );
+
+      burgerMenuButtom.addEventListener('click', () => {
+        modalMenu.classList.add('is-open');
+      });
+
+      closeMobileMenuButton.addEventListener('click', () => {
+        modalMenu.classList.remove('is-open');
+      });
+    </script>
+
     <!-- #endregion MobileMenu -->
   </body>
 </html>

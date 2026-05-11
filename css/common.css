@@ -127,6 +127,34 @@ textarea {
   padding: 0;
 }
 
+.close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  background: var(--cornflower);
+  fill: var(--navy-blue-modal);
+  transition:
+    border-color 250ms ease-in-out,
+    background-color 250ms ease-in-out,
+    fill 250ms ease-in-out;
+}
+
+.close-button:hover,
+.close-button:focus {
+  border-color: var(--ocean);
+  background: var(--ocean);
+  fill: var(--white);
+}
+
 @media (min-width: 768px) {
 }
 
