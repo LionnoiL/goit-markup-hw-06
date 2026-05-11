@@ -147,6 +147,7 @@
             <li class="team__item">
               <img
                 class="team-item__image"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 src="./images/team-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -213,6 +214,7 @@
             <li class="team__item">
               <img
                 class="team-item__image"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -279,6 +281,7 @@
             <li class="team__item">
               <img
                 class="team-item__image"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -345,6 +348,7 @@
             <li class="team__item">
               <img
                 class="team-item__image"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 src="./images/team-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -421,6 +425,10 @@
               <div class="portfolio__thumb">
                 <img
                   class="portfolio__image"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio-1@2x.jpg 2x
+                  "
                   src="./images/portfolio-1.jpg"
                   alt="Banking app interface"
                   width="360"
@@ -446,6 +454,10 @@
               <div class="portfolio__thumb">
                 <img
                   class="portfolio__image"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio-2@2x.jpg 2x
+                  "
                   src="./images/portfolio-2.jpg"
                   alt="Cashless payment system"
                   width="360"
@@ -468,6 +480,10 @@
               <div class="portfolio__thumb">
                 <img
                   class="portfolio__image"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio-3@2x.jpg 2x
+                  "
                   src="./images/portfolio-3.jpg"
                   alt="Meditation app design"
                   width="360"
@@ -492,6 +508,10 @@
               <div class="portfolio__thumb">
                 <img
                   class="portfolio__image"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio-4@2x.jpg 2x
+                  "
                   src="./images/portfolio-4.jpg"
                   alt="Taxi service application"
                   width="360"
@@ -875,17 +895,17 @@
 
     <script>
       const burgerMenuButtom = document.querySelector('#burger-menu-button');
-      const modalMenu = document.querySelector('#mobile-menu');
+      const mobileMenu = document.querySelector('#mobile-menu');
       const closeMobileMenuButton = document.querySelector(
         '#close-mobile-menu-button'
       );
 
       burgerMenuButtom.addEventListener('click', () => {
-        modalMenu.classList.add('is-open');
+        mobileMenu.classList.add('is-open');
       });
 
       closeMobileMenuButton.addEventListener('click', () => {
-        modalMenu.classList.remove('is-open');
+        mobileMenu.classList.remove('is-open');
       });
     </script>
 
