@@ -7,7 +7,7 @@
 }
 
 .features__item {
-  width: 264px;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
