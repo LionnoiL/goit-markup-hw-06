@@ -198,6 +198,10 @@
   .footer-subscribe__input {
     width: 264px;
   }
+
+  .footer__social-list {
+    justify-content: start;
+  }
 }
 
 @media (min-width: 1158px) {
@@ -209,6 +213,7 @@
   .footer .container {
     flex-wrap: nowrap;
     padding: 0;
+    row-gap: 0;
   }
 
   .footer__right-block {

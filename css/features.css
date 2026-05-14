@@ -48,6 +48,7 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 1.12;
+    text-align: start;
   }
 
   .features__list {
@@ -57,7 +58,7 @@
   }
 
   .features__item {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .features-description {

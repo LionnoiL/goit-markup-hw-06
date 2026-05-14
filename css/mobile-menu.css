@@ -71,7 +71,7 @@
   justify-content: space-around;
   flex-direction: column;
   column-gap: 40px;
-  row-gap: 16px;
+  row-gap: 24px;
 }
 
 .mobile-menu__contact-link {
