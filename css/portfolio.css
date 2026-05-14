@@ -84,7 +84,7 @@
 @media (min-width: 768px) {
   .portfolio__list {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     row-gap: 72px;
     column-gap: 24px;
   }
