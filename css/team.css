@@ -101,4 +101,8 @@
   .team__list {
     flex-wrap: nowrap;
   }
+
+  .team__item {
+    width: calc((100% - 72px) / 4);
+  }
 }

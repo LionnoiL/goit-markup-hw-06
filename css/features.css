@@ -55,6 +55,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
+    row-gap: 72px;
   }
 
   .features__item {
@@ -78,6 +79,10 @@
   .features__list {
     flex-wrap: nowrap;
     gap: 24px;
+  }
+
+  .features__item {
+    width: calc((100% - 72px) / 4);
   }
 
   .features .container {
