@@ -13,6 +13,10 @@
   --green: #31d0aa;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
